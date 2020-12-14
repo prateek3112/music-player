@@ -18,14 +18,19 @@ const LibrarySong = ({
       }
     });
     setSongs(newSongs);
+    // For choice of playing
     if (isPlaying) {
       await setCurrentSong(Song);
       audioRef.current.play();
     } else {
       setCurrentSong(Song);
-
+setIsPlaying(true);
       audioRef.current.play();
     }
+    //Auto play at selection
+    // await setCurrentSong(Song);
+    // setIsPlaying(true);
+    // audioRef.current.play();
   };
 
   return (
