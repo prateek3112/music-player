@@ -14,5 +14,14 @@ h3 {
     transform: scale(1.2);
     transition: ease-in delay 2s;
 }
+body{
+  font-family: 'Andika New Basic', sans-serif;
+}
+h3,h4{
+  font-weight: 400;
+  color: rgb(100, 100, 100)
+}
 @import "./_song.scss";
 @import "./_player.scss";
+@import "./_library.scss";
+

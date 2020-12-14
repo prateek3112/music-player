@@ -62,11 +62,11 @@ function chillHop() {
       active: false,
     },
     {
-      name: "Pta ni konsa Song",
+      name: "5 am",
       cover:
-        "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
-      audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
+      "https://chillhop.com/wp-content/uploads/2020/10/0e5bb63f838ff92eeac142aae944e9f678df13c9-1024x1024.jpg",
+      artist: "Ruck P, Shuko",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=10309",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: false,
