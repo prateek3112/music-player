@@ -10,18 +10,49 @@ h3 {
   color: rgb(54, 54, 54);
 }
 
-.d:hover{
-    transform: scale(1.2);
-    transition: ease-in delay 2s;
+.d{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
 }
 body{
   font-family: 'Andika New Basic', sans-serif;
+  height: 100%
+  
 }
 h3,h4{
   font-weight: 400;
   color: rgb(100, 100, 100)
 }
+.spinner{
+  height: 3rem;
+  padding:10px;
+  min-width: 4vw;
+  align-content: center;
+  position: relative;
+  left: 46%;
+  margin:25px
+  
+}
+.App {
+  transition: all 0.5s ease;
+
+}
+.library-active {
+  margin-left: 16%;
+  
+}
+.darkMode{
+  background-color: black;
+  color: #2be09e;
+  
+}
+
+
 @import "./_song.scss";
 @import "./_player.scss";
 @import "./_library.scss";
+@import "./_nav.scss";
+
 

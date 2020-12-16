@@ -24,7 +24,7 @@ const LibrarySong = ({
       audioRef.current.play();
     } else {
       setCurrentSong(Song);
-setIsPlaying(true);
+
       audioRef.current.play();
     }
     //Auto play at selection
