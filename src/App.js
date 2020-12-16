@@ -29,7 +29,7 @@ function App() {
     const roundedCurrent = Math.round(currentTime);
     const roundedDuration = Math.round(duration);
     const animationP = Math.round((roundedCurrent / roundedDuration) * 100);
-    console.log(animationP);
+
     setSongInfo({
       ...songInfo,
       currentTime,
@@ -47,7 +47,7 @@ function App() {
   const SongEndHandler = async () => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
-      if (isPlaying) audioRef.current.play();    
+    if (isPlaying) audioRef.current.play();
   };
   const darkModeHandler = () => {
     if (isDark) {
@@ -58,10 +58,15 @@ function App() {
   };
   return (
     <div
-      className={`App ${isLibrary ? "library-active" : ""} ${isDark ? "darkMode" : ""}`}
-      
+      className={`App ${isLibrary ? "library-active" : ""} ${
+        isDark ? "darkMode" : ""
+      }`}
     >
-      <Nav setLibrary={setLibrary} isLibrary={isLibrary} darkModeHandler={darkModeHandler}/>
+      <Nav
+        setLibrary={setLibrary}
+        isLibrary={isLibrary}
+        darkModeHandler={darkModeHandler}
+      />
       <Song currentSong={currentSong} isPlaying={isPlaying} />
       {songInfo.duration ? (
         <Player

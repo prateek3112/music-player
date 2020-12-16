@@ -20,6 +20,7 @@ const Player = ({ audioRef ,songInfo, setSongInfo ,currentSong, isPlaying, setIs
       }
     });
     setSongs(newSongs);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSong])
   const playSongHandler = () => {
     if (!isPlaying) {
